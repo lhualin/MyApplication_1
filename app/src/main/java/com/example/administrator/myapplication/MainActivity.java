@@ -98,14 +98,14 @@ public class MainActivity extends AppCompatActivity {
         mWebView.loadUrl("file:///android_asset/index2.html");
 
 
-        /*// 设置支持JavaScript等
+       // 设置支持JavaScript等
         WebSettings mWebSettings = mWebView.getSettings();
         mWebSettings.setJavaScriptEnabled(true);
         mWebSettings.setBuiltInZoomControls(true);
-        mWebSettings.setLightTouchEnabled(true);
+        //mWebSettings.setLightTouchEnabled(true);
         mWebSettings.setSupportZoom(true);
         mWebView.setHapticFeedbackEnabled(false);
-        // mWebView.setInitialScale(0); // 改变这个值可以设定初始大小
+       /*  // mWebView.setInitialScale(0); // 改变这个值可以设定初始大小
 
         //重要,用于与页面交互!
 
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             // TODO
             // 在这里进行 http request.网络请求相关操作
-              AVQuery<AVObject> query=new AVQuery<AVObject>("TestObject");
+              AVQuery<AVObject> query=new AVQuery<>("TestObject");
                     query.whereEqualTo("name","sb");
                     query.findInBackground(new FindCallback<AVObject>() {
                         public void done(List<AVObject> avObjects, AVException e) {
@@ -172,8 +172,9 @@ public class MainActivity extends AppCompatActivity {
 
     // ProxyBridge pBridge = new ProxyBridge();
     public class ProxyBridge {
-        @JavascriptInterface
+
         //
+        @JavascriptInterface
         public int one () {
             return 1;
         }
