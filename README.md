@@ -8,3 +8,4 @@ Can't update: no tracked branch
          To make your branch track a remote branch call, for example,
          git branch --set-upstream master origin/master (show balloon)
 12:36:43 Update canceled
+cannot merge
