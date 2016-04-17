@@ -9,3 +9,6 @@ Can't update: no tracked branch
          git branch --set-upstream master origin/master (show balloon)
 12:36:43 Update canceled
 cannot merge
+
+still can not pull
+
