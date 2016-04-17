@@ -99,12 +99,12 @@ public class MainActivity extends AppCompatActivity {
 
 
        // 设置支持JavaScript等
-        WebSettings mWebSettings = mWebView.getSettings();
+       /* WebSettings mWebSettings = mWebView.getSettings();
         mWebSettings.setJavaScriptEnabled(true);
         mWebSettings.setBuiltInZoomControls(true);
         //mWebSettings.setLightTouchEnabled(true);
         mWebSettings.setSupportZoom(true);
-        mWebView.setHapticFeedbackEnabled(false);
+        mWebView.setHapticFeedbackEnabled(false);*/
        /*  // mWebView.setInitialScale(0); // 改变这个值可以设定初始大小
 
         //重要,用于与页面交互!
